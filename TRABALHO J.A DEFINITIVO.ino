@@ -109,7 +109,7 @@ void loop() {
       digitalWrite(PIN_SENSOR_ENTRADA, HIGH); 
       } 
 
-      if(((tempo_actual - tempo_de_intervalo1) >= 60000) && !PrimeiroIf ) {
+      if(((tempo_actual - tempo_de_intervalo1) >= 14400000) && !PrimeiroIf ) {
           DadoIR = SD.open("dados.txt", FILE_WRITE);
           DadoIR.println("O total de pessoas ao meio dia foi : " + String(conta_entrada) + " pessoas.");
               Serial.println("O total de pessoas ao meio dia  foi : " + String(conta_entrada) + " pessoas.");
@@ -118,7 +118,7 @@ void loop() {
         PrimeiroIf = true;
     }
 
-      if((tempo_actual - tempo_de_intervalo2) >= 120000) {
+      if((tempo_actual - tempo_de_intervalo2) >= 39600000) {
           DadoIR = SD.open("dados.txt", FILE_WRITE);
           DadoIR.println("O total de pessoas a meia noite foi : " + String(conta_entrada) + " pessoas.");
              Serial.println("O total de pessoas a meia noite foi : " + String(conta_entrada) + " pessoas.");
