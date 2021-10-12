@@ -1,6 +1,6 @@
 ///Feito por:Lexy
 //Discord:Lexy3138
-
+//github.com/Small-Lexy
 
 //SD card
   #include <SPI.h>
