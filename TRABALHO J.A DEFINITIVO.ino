@@ -120,8 +120,8 @@ void loop() {
 
       if((tempo_actual - tempo_de_intervalo2) >= 39600000) {
           DadoIR = SD.open("dados.txt", FILE_WRITE);
-          DadoIR.println("O total de pessoas a meia noite foi : " + String(conta_entrada) + " pessoas.");
-             Serial.println("O total de pessoas a meia noite foi : " + String(conta_entrada) + " pessoas.");
+          DadoIR.println("O total de pessoas as 19 horas foi : " + String(conta_entrada) + " pessoas.");
+             Serial.println("O total de pessoas as 19 horas  foi : " + String(conta_entrada) + " pessoas.");
           DadoIR.println("Fim do dia.");
           DadoIR.close();
        tempo_de_intervalo2 = tempo_actual; 
