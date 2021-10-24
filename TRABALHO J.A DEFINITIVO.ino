@@ -109,6 +109,8 @@ void loop() {
       digitalWrite(PIN_SENSOR_ENTRADA, HIGH); 
       } 
 
+//SD card
+
       if(((tempo_actual - tempo_de_intervalo1) >= 14400000) && !PrimeiroIf ) {
           DadoIR = SD.open("dados.txt", FILE_WRITE);
           DadoIR.println("O total de pessoas ao meio dia foi : " + String(conta_entrada) + " pessoas.");
