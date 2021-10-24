@@ -25,8 +25,8 @@
   int valor_entrada = 0;   
   int valor_saida = 0;   
   #define PIN_SDCARD 10
-  //unsigned long tempo_de_intervalo1 = 14400000;
-  //unsigned long tempo_de_intervalo2 = 39600000;
+  //Tempo 4 horas = 14400000;
+  //tempo 11 horas = 39600000;
   bool PrimeiroIf = false; 
   unsigned long tempo_de_intervalo1 = 0; 
   unsigned long tempo_de_intervalo2 = 0;
